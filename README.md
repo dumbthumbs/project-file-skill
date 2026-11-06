@@ -10,7 +10,7 @@ Chat history is expensive and easy to lose after a summary. A project file keeps
 
 - **Goal**
 - **Decisions** — what you chose and why (dated, with timezone)
-- **Rejected** — options considered and why they were dropped, so a later resume does not retry a path you already killed
+- **Rejected** — options considered, why they were dropped, and `revisit if` (the condition under which the path is worth trying again, or `never` if it is truly dead). On resume, skip `never`. If a revisit condition is now true, move that item to Next step or Open questions instead of retrying it blindly or ignoring it.
 - **Done**
 - **Next step**
 - **Open questions**
